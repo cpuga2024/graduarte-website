@@ -1,0 +1,130 @@
+/* Estilos para subproductos */
+.product-category {
+    margin-bottom: 50px;
+}
+
+.product-category-title {
+    font-family: var(--font-secondary);
+    color: var(--color-navy);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.product-category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-gold);
+}
+
+.subproduct-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.subproduct-card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.subproduct-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.subproduct-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.subproduct-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.subproduct-card:hover .subproduct-image img {
+    transform: scale(1.1);
+}
+
+.subproduct-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.subproduct-info h4 {
+    font-family: var(--font-secondary);
+    color: var(--color-navy);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.subproduct-info p {
+    margin-bottom: 15px;
+    color: var(--color-dark-gray);
+    font-size: 0.9rem;
+}
+
+.subproduct-features {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.subproduct-features li {
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.subproduct-features li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--color-gold);
+    position: absolute;
+    left: 0;
+}
+
+/* Estilos para el botón de WhatsApp en el formulario */
+.whatsapp-submit {
+    background-color: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.whatsapp-submit i {
+    font-size: 1.2rem;
+}
+
+.whatsapp-submit:hover {
+    background-color: #128C7E;
+}
+
+/* Estilos responsivos para subproductos */
+@media screen and (max-width: 768px) {
+    .subproduct-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .subproduct-grid {
+        grid-template-columns: 1fr;
+    }
+}
