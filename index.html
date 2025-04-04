@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículos de Graduación - Elegancia y Calidad</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado y Navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>GraduArte</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Celebra tu éxito con estilo</h2>
+                <p>Artículos de graduación de alta calidad para hacer de tu momento especial un recuerdo inolvidable</p>
+                <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos" class="about">
+        <div class="container">
+            <h2 class="section-title">Quiénes Somos</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-placeholder.jpg" alt="Nuestro equipo">
+                </div>
+                <div class="about-text">
+                    <h3>Nuestra Historia</h3>
+                    <p>Desde 2010, en GraduArte nos hemos dedicado a crear artículos de graduación que reflejan la excelencia y el logro académico. Comenzamos como un pequeño taller familiar y hoy somos líderes en el mercado gracias a nuestro compromiso con la calidad y la atención personalizada.</p>
+                    
+                    <h3>Nuestro Compromiso</h3>
+                    <p>Nos enorgullece ofrecer productos de la más alta calidad, confeccionados con materiales premium y atención al detalle. Entendemos que la graduación es un momento único en la vida de cada estudiante, por eso nos esforzamos en crear artículos que estén a la altura de esta importante celebración.</p>
+                    
+                    <h3>Valores</h3>
+                    <ul>
+                        <li><strong>Excelencia:</strong> En cada detalle de nuestros productos.</li>
+                        <li><strong>Puntualidad:</strong> Respetamos los tiempos de entrega.</li>
+                        <li><strong>Personalización:</strong> Adaptamos nuestros productos a tus necesidades.</li>
+                        <li><strong>Innovación:</strong> Constantemente actualizamos nuestros diseños.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="estolas">Estolas</button>
+                <button class="category-btn" data-category="birretes">Birretes</button>
+                <button class="category-btn" data-category="anuarios">Anuarios</button>
+                <button class="category-btn" data-category="bandas">Bandas</button>
+            </div>
+            <div class="product-grid">
+                <!-- Estolas -->
+                <div class="product-card" data-category="estolas">
+                    <div class="product-image">
+                        <img src="images/product-placeholder-1.jpg" alt="Estola Personalizada">
+                    </div>
+                    <div class="product-info">
+                        <h3>Estola Personalizada</h3>
+                        <p>Estola de satín con bordado personalizado de alta calidad.</p>
+                        <a href="#contacto" class="btn btn-secondary">Solicitar Información</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="estolas">
+                    <div class="product-image">
+                        <img src="images/product-placeholder-2.jpg" alt="Estola Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Estola Premium</h3>
+                        <p>Estola de terciopelo con acabados dorados y diseño exclusivo.</p>
+                        <a href="#contacto" class="btn btn-secondary">Solicitar Información</a>
+                    </div>
+                </div>
+                
+                <!-- Birretes -->
+                <div class="product-card" data-category="birretes">
+                    <div class="product-image">
+                        <img src="images/product-placeholder-3.jpg" alt="Birrete Clásico">
+                    </div>
+                    <div class="product-info">
+                        <h3>Birrete Clásico</h3>
+                        <p>Birrete tradicional con borla de alta calidad en varios colores.</p>
+                        <a href="#contacto" class="btn btn-secondary">Solicitar Información</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="birretes">
+                    <div class="product-image">
+                        <img src="images/product-placeholder-4.jpg" alt="Birrete Personalizado">
+                    </div>
+                    <div class="product-info">
+                        <h3>Birrete Personalizado</h3>
+                        <p>Birrete con diseño personalizado en la parte superior.</p>
+                        <a href="#contacto" class="btn btn-secondary">Solicitar Información</a>
+                    </div>
+                </div>
+                
+                <!-- Anuarios -->
+                <div class="product-card" data-category="anuarios">
+                    <div class="product-image">
+                        <img src="images/product-placeholder-5.jpg" alt="Anuario Digital">
+                    </div>
+                    <div class="product-info">
+                        <h3>Anuario Digital</h3>
+                        <p>Anuario en formato digital con diseño moderno y personalizable.</p>
+                        <a href="#contacto" class="btn btn-secondary">Solicitar Información</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="anuarios">
+                    <div class="product-image">
+                        <img src="images/product-placeholder-6.jpg" alt="Anuario Impreso Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Anuario Impreso Premium</h3>
+                        <p>Anuario impreso en papel de alta calidad con acabado de lujo.</p>
+                        <a href="#contacto" class="btn btn-secondary">Solicitar Información</a>
+                    </div>
+                </div>
+                
+                <!-- Bandas -->
+                <div class="product-card" data-category="bandas">
+                    <div class="product-image">
+                        <img src="images/product-placeholder-7.jpg" alt="Banda Honorífica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Banda Honorífica</h3>
+                        <p>Banda para reconocimientos especiales con bordado personalizado.</p>
+                        <a href="#contacto" class="btn btn-secondary">Solicitar Información</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="bandas">
+                    <div class="product-image">
+                        <img src="images/product-placeholder-8.jpg" alt="Banda Presidencial">
+                    </div>
+                    <div class="product-info">
+                        <h3>Banda Presidencial</h3>
+                        <p>Banda presidencial para eventos especiales y ceremonias.</p>
+                        <a href="#contacto" class="btn btn-secondary">Solicitar Información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-image">
+                            <img src="images/testimonial-placeholder-1.jpg" alt="Cliente 1">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"La calidad de las estolas superó nuestras expectativas. El servicio fue excelente y la entrega puntual. Toda nuestra generación quedó encantada."</p>
+                            <h4>María González</h4>
+                            <p class="testimonial-role">Coordinadora de Graduación, Universidad Nacional</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-image">
+                            <img src="images/testimonial-placeholder-2.jpg" alt="Cliente 2">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"Los anuarios quedaron espectaculares, cada detalle fue cuidado con esmero. El equipo de GraduArte entendió perfectamente nuestra visión y la plasmó de manera excepcional."</p>
+                            <h4>Carlos Ramírez</h4>
+                            <p class="testimonial-role">Director, Colegio San Patricio</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-image">
+                            <img src="images/testimonial-placeholder-3.jpg" alt="Cliente 3">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"Agradecemos la atención personalizada y la rapidez con la que atendieron nuestro pedido de último momento. Los birretes personalizados fueron un éxito total entre los graduados."</p>
+                            <h4>Laura Méndez</h4>
+                            <p class="testimonial-role">Presidenta de Generación, Instituto Tecnológico</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Solicita una cotización</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="institucion">Institución</label>
+                            <input type="text" id="institucion" name="institucion">
+                        </div>
+                        <div class="form-group">
+                            <label for="producto">Producto de interés</label>
+                            <select id="producto" name="producto" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="estolas">Estolas</option>
+                                <option value="birretes">Birretes</option>
+                                <option value="anuarios">Anuarios</option>
+                                <option value="bandas">Bandas</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Información de contacto</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av. Universidad 3000, Ciudad Universitaria, 04510 Ciudad de México, CDMX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+52 55 1234 5678</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@graduarte.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br>Sábados: 10:00 AM - 2:00 PM</p>
+                    </div>
+                    <div class="social-media">
+                        <h4>Síguenos en redes sociales</h4>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>GraduArte</h2>
+                    <p>Elegancia y calidad en artículos de graduación</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-products">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="#productos">Estolas</a></li>
+                        <li><a href="#productos">Birretes</a></li>
+                        <li><a href="#productos">Anuarios</a></li>
+                        <li><a href="#productos">Bandas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete a nuestro boletín</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-secondary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GraduArte. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/5212345678" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
