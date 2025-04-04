@@ -604,5 +604,26 @@
     <script src="js/main.js"></script>
     <script src="js/subproducts.js"></script>
     <script src="js/gallery.js"></script>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const telefono = document.getElementById('telefono').value;
+    const institucion = document.getElementById('institucion').value;
+    const producto = document.getElementById('producto').value;
+    const mensaje = document.getElementById('mensaje').value;
+
+    const texto = `Hola, me gustaría solicitar una cotización:\n\n👤 Nombre: ${nombre}\n📧 Correo: ${email}\n📞 Teléfono: ${telefono}\n🏫 Institución: ${institucion}\n📦 Producto: ${producto}\n📝 Mensaje: ${mensaje}`;
+
+    const numeroWhatsapp = "56939256731";
+    const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, '_blank');
+});
+</script>
+
 </body>
 </html>
