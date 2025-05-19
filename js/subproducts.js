@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 whatsappMessage += `*Mensaje:* ${mensaje.value}%0A`;
                 
                 // Número de WhatsApp (reemplazar con el número real)
-                const whatsappNumber = '5212345678';
+                const whatsappNumber = '56990980313';
                 
                 // Crear URL de WhatsApp
                 const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
