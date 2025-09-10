@@ -142,7 +142,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Generar 3 imágenes adicionales para cada producto
         for (let i = 1; i <= 3; i++) {
             // Crear un hash único basado en la categoría, nombre y número
-            const hash = btoa(`${category}-${productName}-${i}`).substring(0, 8);
+            // btoa sólo acepta caracteres ASCII, por lo que codificamos previamente
+            const source = `${category}-${productName}-${i}`;
+            const hash = btoa(unescape(encodeURIComponent(source))).substring(0, 8);
             const randomParam = `random=${hash}`;
             
             // Crear URL con parámetro único
